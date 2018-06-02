@@ -1,0 +1,15 @@
+{
+  "name": "projects-johnny-five",
+  "version": "1.0.0",
+  "description": "aplications of arduino developed with johnny five, node, express and possibly with react js",
+  "main": "index.js",
+  "license": "ISC",
+  "dependencies": {
+    "firmata-party": "^1.5.9",
+    "johnny-five": "^0.15.0"
+  },
+  "scripts": {
+		"reset": "firmata-party uno --debug",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
