@@ -1,6 +1,10 @@
 extends layout
 
 block content
-	h1= title
-	a(href='./on') On
-	a(href='./off') Off
+	div.text-center
+		h1= title
+		h3(class= comment=='Turn on or off your led'? 'default' : comment=='Led on'? 'on' : 'off')= comment
+		a(class= 'btn btn-info' href='./on') On
+		|
+		|
+		a(class= 'btn btn-danger' href='./off') Off

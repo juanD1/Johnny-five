@@ -26,7 +26,8 @@ myBoard.on('error', (error)=>{ //captura le error
 	exports.index = (req, res) => {	
 		console.log('en index')
 		res.render('index', {
-			title:'arduino y johnny five'
+			title:'Arduino y johnny five',
+			comment: 'Turn on or off your led'
 		})
 	}
 	
@@ -34,7 +35,8 @@ myBoard.on('error', (error)=>{ //captura le error
 		console.log('Led on')
 		myBoard.isReady ? devices.led.on() : console.log("Board isn't conected")
 		res.render('index', {
-			title:'arduino y johnny five'
+			title: 'Arduino y johnny five',
+			comment: 'Led on'
 		})
 	}
 	
@@ -42,6 +44,7 @@ myBoard.on('error', (error)=>{ //captura le error
 		console.log('Led off')
 		myBoard.isReady ? devices.led.off() : console.log("Board isn't conected")	
 		res.render('index', {
-			title:'arduino y johnny five'
+			title:'Arduino y johnny five',
+			comment: 'Led off'
 		})	
 	}
