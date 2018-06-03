@@ -1,8 +1,7 @@
 {
   "name": "projects-johnny-five",
   "version": "1.0.0",
-  "description": "aplications of arduino developed with johnny five, node, express and possibly with react js",
-  "main": "index.js",
+  "description": "aplications of arduino developed with johnny five, node, express and possibly with react js",  
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -11,13 +10,13 @@
     "johnny-five": "^0.15.0",
     "morgan": "^1.9.0",
     "pug": "^2.0.3"
-	},
-	"devDependencies": {
+  },
+  "devDependencies": {
     "nodemon": "^1.17.5"
   },
   "scripts": {
     "reset": "firmata-party uno --debug",
-    "server": "nodemon /src/app.js",
+    "server": "nodemon src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
-  }  
+  }
 }
