@@ -18,7 +18,7 @@ app.use(logger('dev'))
 app.use(bodyParser.urlencoded({extended: false}))
 
 //routes
-// app.use('/',indexRoutes)
+app.use('/',indexRoutes)
 
 app.listen(app.get('port'), () => {
 	console.log('server on port ', app.get('port'))

@@ -1,9 +1,18 @@
 //controller on led
-
-exports.onLed = (req, res) => {
-	console.log('onLed')
+exports.index = (req, res) => {	
+	res.render('index', {
+		title:'arduino y johnny five'
+	})
 }
 
-exports.offLed = (req, res) => {
-	console.log('offLed')
+exports.onLed = (req, res) => {	
+	res.render('index', {
+		title:'arduino y johnny five'
+	})
+}
+
+exports.offLed = (req, res) => {	
+	res.render('index', {		
+		title:'arduino y johnny five'
+	})	
 }
