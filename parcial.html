@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Parcial Expresiones regulares</title>
+
+	<script>
+		function valuateExpresion() {
+			const input = document.getElementById("expresion").value;
+			let expreg = /^[A-Z]{1,2}$/;
+
+			let expresion = expreg.test(input)
+			console.log(expresion)
+
+			if (expresion)
+				alert("Expresion CORRECTA");
+			else
+				alert("Expresion INCORRECTA");
+		}		
+	</script>
+
+</head>
+
+<body>
+	<form id="miFormulario" action="" method="get">
+		<input type="text" id="expresion" placeholder="Digita la expresion" />
+		<input type="button" value="Expresion" onclick="valuateExpresion()" />
+	</form>
+</body>
+
+</html>
